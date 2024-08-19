@@ -1,0 +1,265 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    height: 50px;
+}
+
+header .pageName {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #ff4500;
+    border-bottom: 3px solid #ff4500;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.introSection {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.introText {
+    flex: 1;
+}
+
+.mainArticleTitle {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mainArticleDesc {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.bTn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.bTn:hover {
+    background-color: #ff4500;
+}
+
+.introImg img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.articlesSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.newsCard {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.newsCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.newsCardContent {
+    padding: 20px;
+}
+
+.newsTitle {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.newsDescription {
+    font-size: 1em;
+    color: #666;
+}
+
+.resourcesSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.resourceItem {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.resourceItem h2 {
+    font-size: 2em;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.resourceItem h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.resourceItem p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sun-icon, .moon-icon {
+    font-size: 1.5em;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch label {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch label:before {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s;
+    transform: translateX(4px);
+}
+
+.switch input:checked + label {
+    background-color: #666;
+}
+
+.switch input:checked + label:before {
+    transform: translateX(26px);
+}
+
+/* Modo Claro (Padrão) */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+nav a {
+    color: #333;
+}
+
+.newsItem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.resourceItem {
+    background-color: #f9f9f9;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode nav a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .newsItem {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+body.dark-mode .resourceItem {
+    background-color: #2a2a2a;
+}

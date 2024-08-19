@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>News Page</title>
+</head>
+<body>
+    <header>
+
+        <div class="logo-container">
+
+            <img src="https://cdn-icons-png.freepik.com/256/657/657013.png?ga=GA1.1.1678703634.1718646592&semt=ais_hybrid" alt="logo" class="logoImg">
+
+        </div>
+
+        <nav>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#" class="active">Trending</a>
+            <a href="#">Categorias</a>
+            <div class="theme-switcher">
+                <span class="sun-icon">🌞</span>
+                <div class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <label for="darkModeToggle"></label>
+                </div>
+                <span class="moon-icon">🌜</span>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="introSection">
+
+            <div class="introText">
+                <h1 class="mainArticleTitle" id="mainArticleTitle">Título Principal</h1>
+                <p class="mainArticleDesc" id="mainArticleDesc">Breve descrição sobre o tópico principal</p>
+                <a href="#" class="bTn" id="bTn">Saiba Mais</a>
+            </div>
+            <div class="introImg">
+                <img src="mainImg.jpg" alt="imagemPrincipal" id="introImg">
+            </div>
+
+        </section>
+        
+        <section class="articlesSection">
+            <a href="#" class="newsCard" id="newsItem1">
+                <div class="newsCardContent">
+                    <h3 class="newsTitle">Título da notícia 1</h3>
+                    <p class="newsDescription">Resumo da notícia 1</p>
+                </div>
+            </a>
+        
+            <a href="#" class="newsCard" id="newsItem2">
+                <div class="newsCardContent">
+                    <h3 class="newsTitle">Título da notícia 2</h3>
+                    <p class="newsDescription">Resumo da notícia 2</p>
+                </div>
+            </a>
+        
+            <a href="#" class="newsCard" id="newsItem3">
+                <div class="newsCardContent">
+                    <h3 class="newsTitle">Título da notícia 3</h3>
+                    <p class="newsDescription">Resumo da notícia 3</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="resourcesSection">
+
+            <div class="resourceItem" id="resourceItem1">
+                <h2 class="resourceNumber">Número 1</h2>
+                <h4 class="resourceTitle">Breve título</h4>
+                <p class="resourceDescription">Breve descrição</p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
